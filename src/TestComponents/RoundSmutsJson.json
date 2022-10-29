@@ -1,0 +1,1041 @@
+{
+    "routes": [
+      {
+        "country_crossed": false,
+        "weight_name": "auto",
+        "weight": 462.218,
+        "duration": 303.894,
+        "distance": 1129.896,
+        "legs": [
+          {
+            "via_waypoints": [],
+            "admins": [{"iso_3166_1_alpha3": "ZAF", "iso_3166_1": "ZA"}],
+            "weight": 165.155,
+            "duration": 138.892,
+            "steps": [
+              {
+                "intersections": [
+                  {
+                    "bearings": [321],
+                    "entry": [true],
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "geometry_index": 0,
+                    "location": [18.461007, -33.960026]
+                  }
+                ],
+                "maneuver": {
+                  "type": "depart",
+                  "instruction": "Drive northwest.",
+                  "bearing_after": 321,
+                  "bearing_before": 0,
+                  "location": [18.461007, -33.960026]
+                },
+                "name": "",
+                "duration": 2.021,
+                "distance": 6.738,
+                "driving_side": "left",
+                "weight": 2.173,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461007, -33.960026],
+                    [18.460999, -33.960022],
+                    [18.460985, -33.960012],
+                    [18.460961, -33.959979]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "entry": [true, false, false],
+                    "in": 1,
+                    "bearings": [15, 141, 187],
+                    "duration": 18.998,
+                    "turn_weight": 10,
+                    "turn_duration": 3.767,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 26.373,
+                    "geometry_index": 3,
+                    "location": [18.460961, -33.959979]
+                  },
+                  {
+                    "entry": [true, false, false],
+                    "in": 1,
+                    "bearings": [20, 202, 291],
+                    "duration": 7.484,
+                    "turn_weight": 1,
+                    "turn_duration": 0.007,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 9.038,
+                    "geometry_index": 6,
+                    "location": [18.461165, -33.959517]
+                  },
+                  {
+                    "entry": [true, false, false],
+                    "in": 2,
+                    "bearings": [19, 115, 200],
+                    "duration": 35.731,
+                    "turn_weight": 1,
+                    "turn_duration": 0.008,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 39.402,
+                    "geometry_index": 7,
+                    "location": [18.461264, -33.959289]
+                  },
+                  {
+                    "entry": [true, true, false],
+                    "in": 2,
+                    "bearings": [12, 106, 194],
+                    "duration": 10.53,
+                    "turn_weight": 1,
+                    "turn_duration": 0.007,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 12.312,
+                    "geometry_index": 10,
+                    "location": [18.461646, -33.958179]
+                  },
+                  {
+                    "entry": [true, false, false],
+                    "in": 2,
+                    "bearings": [11, 101, 192],
+                    "duration": 0.848,
+                    "turn_weight": 1,
+                    "turn_duration": 0.018,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 1.893,
+                    "geometry_index": 11,
+                    "location": [18.461732, -33.957849]
+                  },
+                  {
+                    "entry": [true, false, false],
+                    "in": 1,
+                    "bearings": [11, 191, 282],
+                    "duration": 0.848,
+                    "turn_weight": 1,
+                    "turn_duration": 0.018,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 1.893,
+                    "geometry_index": 12,
+                    "location": [18.461739, -33.95782]
+                  },
+                  {
+                    "entry": [true, false, false],
+                    "in": 2,
+                    "bearings": [10, 101, 191],
+                    "duration": 9.779,
+                    "turn_weight": 1,
+                    "turn_duration": 0.007,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 11.504,
+                    "geometry_index": 13,
+                    "location": [18.461745, -33.957795]
+                  },
+                  {
+                    "entry": [true, true, false],
+                    "in": 2,
+                    "bearings": [7, 99, 190],
+                    "duration": 32.666,
+                    "turn_weight": 1,
+                    "turn_duration": 0.008,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 36.106,
+                    "geometry_index": 14,
+                    "location": [18.46182, -33.957459]
+                  },
+                  {
+                    "entry": [true, true, false],
+                    "in": 2,
+                    "bearings": [2, 97, 183],
+                    "duration": 4.934,
+                    "turn_weight": 1,
+                    "turn_duration": 0.008,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 6.296,
+                    "geometry_index": 17,
+                    "location": [18.461942, -33.95632]
+                  },
+                  {
+                    "entry": [true, false, false],
+                    "in": 1,
+                    "bearings": [0, 181, 270],
+                    "duration": 0.387,
+                    "turn_weight": 1,
+                    "turn_duration": 0.008,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 1.407,
+                    "geometry_index": 19,
+                    "location": [18.461948, -33.95609]
+                  },
+                  {
+                    "bearings": [180, 282, 359],
+                    "entry": [false, true, true],
+                    "in": 0,
+                    "turn_weight": 1,
+                    "turn_duration": 0.007,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "geometry_index": 20,
+                    "location": [18.461948, -33.956068]
+                  }
+                ],
+                "maneuver": {
+                  "type": "turn",
+                  "instruction": "Turn right onto Residence Road.",
+                  "modifier": "right",
+                  "bearing_after": 15,
+                  "bearing_before": 321,
+                  "location": [18.460961, -33.959979]
+                },
+                "name": "Residence Road",
+                "duration": 136.871,
+                "distance": 505,
+                "driving_side": "left",
+                "weight": 162.982,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.460961, -33.959979],
+                    [18.460978, -33.959913],
+                    [18.460999, -33.959856],
+                    [18.461165, -33.959517],
+                    [18.461264, -33.959289],
+                    [18.461408, -33.958948],
+                    [18.461489, -33.958717],
+                    [18.461646, -33.958179],
+                    [18.461732, -33.957849],
+                    [18.461739, -33.95782],
+                    [18.461745, -33.957795],
+                    [18.46182, -33.957459],
+                    [18.46187, -33.957122],
+                    [18.461916, -33.956711],
+                    [18.461942, -33.95632],
+                    [18.461947, -33.956173],
+                    [18.461948, -33.95609],
+                    [18.461948, -33.956068],
+                    [18.461947, -33.955986],
+                    [18.461944, -33.955796],
+                    [18.461947, -33.955623],
+                    [18.461952, -33.9556],
+                    [18.461963, -33.955577],
+                    [18.461981, -33.955562]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "bearings": [193],
+                    "entry": [true],
+                    "in": 0,
+                    "admin_index": 0,
+                    "geometry_index": 26,
+                    "location": [18.461981, -33.955562]
+                  }
+                ],
+                "maneuver": {
+                  "type": "arrive",
+                  "instruction": "You have arrived at your destination.",
+                  "bearing_after": 0,
+                  "bearing_before": 13,
+                  "location": [18.461981, -33.955562]
+                },
+                "name": "Residence Road",
+                "duration": 0,
+                "distance": 0,
+                "driving_side": "left",
+                "weight": 0,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461981, -33.955562],
+                    [18.461981, -33.955562]
+                  ],
+                  "type": "LineString"
+                }
+              }
+            ],
+            "distance": 511.738,
+            "summary": "Residence Road"
+          },
+          {
+            "via_waypoints": [],
+            "admins": [{"iso_3166_1_alpha3": "ZAF", "iso_3166_1": "ZA"}],
+            "weight": 42.092,
+            "duration": 23.238,
+            "steps": [
+              {
+                "intersections": [
+                  {
+                    "bearings": [270],
+                    "entry": [true],
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "geometry_index": 0,
+                    "location": [18.461981, -33.955562]
+                  }
+                ],
+                "maneuver": {
+                  "type": "depart",
+                  "instruction": "Drive west on Residence Road.",
+                  "bearing_after": 270,
+                  "bearing_before": 0,
+                  "location": [18.461981, -33.955562]
+                },
+                "name": "Residence Road",
+                "duration": 0,
+                "distance": 0,
+                "driving_side": "left",
+                "weight": 0,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461981, -33.955562],
+                    [18.461981, -33.955562]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "entry": [true, false, true],
+                    "in": 1,
+                    "bearings": [68, 90, 346],
+                    "duration": 4.428,
+                    "turn_weight": 5,
+                    "turn_duration": 1.086,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 8.594,
+                    "geometry_index": 1,
+                    "location": [18.461981, -33.955562]
+                  },
+                  {
+                    "entry": [true, false, false],
+                    "in": 2,
+                    "bearings": [69, 175, 248],
+                    "duration": 1.001,
+                    "turn_weight": 1,
+                    "turn_duration": 0.019,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 2.055,
+                    "geometry_index": 3,
+                    "location": [18.462112, -33.955517]
+                  },
+                  {
+                    "bearings": [73, 148, 249, 348],
+                    "entry": [true, false, false, true],
+                    "in": 2,
+                    "turn_weight": 2,
+                    "turn_duration": 0.024,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "geometry_index": 4,
+                    "location": [18.46214, -33.955508]
+                  }
+                ],
+                "maneuver": {
+                  "type": "continue",
+                  "instruction": "Make a right U-turn to stay on Residence Road.",
+                  "modifier": "uturn",
+                  "bearing_after": 68,
+                  "bearing_before": 270,
+                  "location": [18.461981, -33.955562]
+                },
+                "name": "Residence Road",
+                "duration": 8.726,
+                "distance": 26,
+                "driving_side": "left",
+                "weight": 16.167,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461981, -33.955562],
+                    [18.462033, -33.955542],
+                    [18.462112, -33.955517],
+                    [18.46214, -33.955508],
+                    [18.462248, -33.95548]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "entry": [true, true, false, false],
+                    "in": 2,
+                    "bearings": [70, 144, 253, 339],
+                    "duration": 10.161,
+                    "turn_weight": 10,
+                    "turn_duration": 2.772,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 1,
+                    "weight": 17.944,
+                    "geometry_index": 5,
+                    "location": [18.462248, -33.95548]
+                  },
+                  {
+                    "bearings": [53, 116, 270],
+                    "entry": [true, true, false],
+                    "in": 2,
+                    "turn_weight": 1.5,
+                    "turn_duration": 0.122,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 1,
+                    "geometry_index": 13,
+                    "location": [18.462583, -33.955627]
+                  }
+                ],
+                "maneuver": {
+                  "type": "turn",
+                  "instruction": "Turn right onto Madiba Circle.",
+                  "modifier": "right",
+                  "bearing_after": 144,
+                  "bearing_before": 73,
+                  "location": [18.462248, -33.95548]
+                },
+                "name": "Madiba Circle",
+                "duration": 12.746,
+                "distance": 52,
+                "driving_side": "left",
+                "weight": 22.092,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.462248, -33.95548],
+                    [18.462295, -33.955545],
+                    [18.462341, -33.955587],
+                    [18.462388, -33.955615],
+                    [18.462414, -33.955625],
+                    [18.462461, -33.955633],
+                    [18.462504, -33.955635],
+                    [18.46255, -33.955633],
+                    [18.462583, -33.955627],
+                    [18.462667, -33.955654],
+                    [18.462707, -33.955678]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "bearings": [37, 133, 251, 296],
+                    "entry": [false, true, true, false],
+                    "in": 3,
+                    "turn_weight": 2,
+                    "turn_duration": 0.061,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 1,
+                    "geometry_index": 15,
+                    "location": [18.462707, -33.955678]
+                  }
+                ],
+                "maneuver": {
+                  "type": "continue",
+                  "instruction": "Bear right to stay on Madiba Circle.",
+                  "modifier": "slight right",
+                  "bearing_after": 133,
+                  "bearing_before": 116,
+                  "location": [18.462707, -33.955678]
+                },
+                "name": "Madiba Circle",
+                "duration": 1.766,
+                "distance": 9,
+                "driving_side": "left",
+                "weight": 3.833,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.462707, -33.955678],
+                    [18.46274, -33.955705],
+                    [18.462775, -33.955731]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "bearings": [313],
+                    "entry": [true],
+                    "in": 0,
+                    "admin_index": 0,
+                    "geometry_index": 17,
+                    "location": [18.462775, -33.955731]
+                  }
+                ],
+                "maneuver": {
+                  "type": "arrive",
+                  "instruction": "You have arrived at your destination.",
+                  "bearing_after": 0,
+                  "bearing_before": 133,
+                  "location": [18.462775, -33.955731]
+                },
+                "name": "Madiba Circle",
+                "duration": 0,
+                "distance": 0,
+                "driving_side": "left",
+                "weight": 0,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.462775, -33.955731],
+                    [18.462775, -33.955731]
+                  ],
+                  "type": "LineString"
+                }
+              }
+            ],
+            "distance": 87,
+            "summary": "Residence Road, Madiba Circle"
+          },
+          {
+            "via_waypoints": [],
+            "admins": [{"iso_3166_1_alpha3": "ZAF", "iso_3166_1": "ZA"}],
+            "weight": 196.396,
+            "duration": 96.772,
+            "steps": [
+              {
+                "intersections": [
+                  {
+                    "bearings": [201],
+                    "entry": [true],
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "geometry_index": 0,
+                    "location": [18.462775, -33.955731]
+                  },
+                  {
+                    "entry": [false, false, true, true],
+                    "in": 1,
+                    "bearings": [11, 21, 201, 241],
+                    "duration": 4.496,
+                    "turn_weight": 7,
+                    "turn_duration": 2.378,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "weight": 9.276,
+                    "geometry_index": 1,
+                    "location": [18.462775, -33.955731]
+                  },
+                  {
+                    "entry": [false, false, true, false],
+                    "in": 0,
+                    "bearings": [21, 75, 197, 231],
+                    "duration": 5.727,
+                    "turn_weight": 2,
+                    "turn_duration": 0.009,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "weight": 8.146,
+                    "geometry_index": 3,
+                    "location": [18.462736, -33.955816]
+                  },
+                  {
+                    "entry": [false, true, false],
+                    "in": 0,
+                    "bearings": [17, 190, 296],
+                    "duration": 43.211,
+                    "turn_weight": 1,
+                    "turn_duration": 0.011,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 1,
+                    "weight": 47.44,
+                    "geometry_index": 4,
+                    "location": [18.46265, -33.956047]
+                  },
+                  {
+                    "entry": [false, false, true, false],
+                    "in": 0,
+                    "bearings": [9, 100, 189, 280],
+                    "duration": 2.984,
+                    "turn_weight": 2,
+                    "turn_duration": 0.019,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "weight": 5.187,
+                    "geometry_index": 10,
+                    "location": [18.462402, -33.957864]
+                  },
+                  {
+                    "bearings": [9, 100, 192, 280],
+                    "entry": [false, false, true, false],
+                    "in": 0,
+                    "turn_weight": 2,
+                    "turn_duration": 0.022,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "geometry_index": 11,
+                    "location": [18.462378, -33.957985]
+                  }
+                ],
+                "maneuver": {
+                  "type": "depart",
+                  "instruction": "Drive south on Madiba Circle.",
+                  "bearing_after": 201,
+                  "bearing_before": 0,
+                  "location": [18.462775, -33.955731]
+                },
+                "name": "Madiba Circle",
+                "duration": 91.169,
+                "distance": 419,
+                "driving_side": "left",
+                "weight": 109.384,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.462775, -33.955731],
+                    [18.462775, -33.955731],
+                    [18.462769, -33.955748],
+                    [18.462736, -33.955816],
+                    [18.46265, -33.956047],
+                    [18.462634, -33.95611],
+                    [18.462621, -33.956185],
+                    [18.462607, -33.956329],
+                    [18.462577, -33.956735],
+                    [18.46251, -33.957313],
+                    [18.462402, -33.957864],
+                    [18.462378, -33.957985],
+                    [18.462252, -33.958463],
+                    [18.46212, -33.958883],
+                    [18.462017, -33.95916],
+                    [18.461926, -33.959409]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "bearings": [17, 191, 218],
+                    "entry": [false, true, true],
+                    "in": 0,
+                    "turn_weight": 81,
+                    "turn_duration": 0.01,
+                    "mapbox_streets_v8": {"class": "service"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 1,
+                    "geometry_index": 15,
+                    "location": [18.461926, -33.959409]
+                  }
+                ],
+                "maneuver": {
+                  "type": "turn",
+                  "instruction": "Bear left.",
+                  "modifier": "slight left",
+                  "bearing_after": 191,
+                  "bearing_before": 197,
+                  "location": [18.461926, -33.959409]
+                },
+                "name": "",
+                "duration": 5.602,
+                "distance": 10.873,
+                "driving_side": "left",
+                "weight": 87.011,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461926, -33.959409],
+                    [18.461903, -33.959505]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "bearings": [11],
+                    "entry": [true],
+                    "in": 0,
+                    "admin_index": 0,
+                    "geometry_index": 16,
+                    "location": [18.461903, -33.959505]
+                  }
+                ],
+                "maneuver": {
+                  "type": "arrive",
+                  "instruction": "Your destination is on the left.",
+                  "modifier": "left",
+                  "bearing_after": 0,
+                  "bearing_before": 191,
+                  "location": [18.461903, -33.959505]
+                },
+                "name": "",
+                "duration": 0,
+                "distance": 0,
+                "driving_side": "left",
+                "weight": 0,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461903, -33.959505],
+                    [18.461903, -33.959505]
+                  ],
+                  "type": "LineString"
+                }
+              }
+            ],
+            "distance": 429.873,
+            "summary": "Madiba Circle"
+          },
+          {
+            "via_waypoints": [],
+            "admins": [{"iso_3166_1_alpha3": "ZAF", "iso_3166_1": "ZA"}],
+            "weight": 58.576,
+            "duration": 44.991,
+            "steps": [
+              {
+                "intersections": [
+                  {
+                    "entry": [true],
+                    "bearings": [191],
+                    "duration": 1.608,
+                    "mapbox_streets_v8": {"class": "service"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 0,
+                    "weight": 1.729,
+                    "geometry_index": 0,
+                    "location": [18.461903, -33.959505]
+                  },
+                  {
+                    "bearings": [11, 113, 181, 291],
+                    "entry": [false, false, true, false],
+                    "turn_weight": 2,
+                    "turn_duration": 0.013,
+                    "in": 0,
+                    "yield_sign": true,
+                    "mapbox_streets_v8": {"class": "service"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "geometry_index": 1,
+                    "location": [18.461896, -33.959534]
+                  }
+                ],
+                "maneuver": {
+                  "type": "depart",
+                  "instruction": "Drive south.",
+                  "bearing_after": 191,
+                  "bearing_before": 0,
+                  "location": [18.461903, -33.959505]
+                },
+                "name": "",
+                "duration": 12.421,
+                "distance": 24.127,
+                "driving_side": "left",
+                "weight": 15.339,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461903, -33.959505],
+                    [18.461896, -33.959534],
+                    [18.461892, -33.959571],
+                    [18.461893, -33.95966],
+                    [18.461895, -33.959718]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "bearings": [155, 292, 359],
+                    "entry": [true, true, false],
+                    "turn_weight": 7.5,
+                    "turn_duration": 7.005,
+                    "in": 2,
+                    "stop_sign": true,
+                    "mapbox_streets_v8": {"class": "service"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 1,
+                    "geometry_index": 4,
+                    "location": [18.461895, -33.959718]
+                  }
+                ],
+                "maneuver": {
+                  "type": "turn",
+                  "instruction": "Turn right.",
+                  "modifier": "right",
+                  "bearing_after": 292,
+                  "bearing_before": 179,
+                  "location": [18.461895, -33.959718]
+                },
+                "name": "",
+                "duration": 19.862,
+                "distance": 25,
+                "driving_side": "left",
+                "weight": 21.321,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461895, -33.959718],
+                    [18.461837, -33.959694],
+                    [18.461792, -33.959678],
+                    [18.461738, -33.959666],
+                    [18.46169, -33.959658],
+                    [18.461639, -33.959651]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "entry": [false, false, true],
+                    "in": 1,
+                    "bearings": [48, 102, 229],
+                    "duration": 6.746,
+                    "turn_weight": 7,
+                    "turn_duration": 0.221,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "weight": 14.014,
+                    "geometry_index": 9,
+                    "location": [18.461639, -33.959651]
+                  },
+                  {
+                    "bearings": [49, 70, 227],
+                    "entry": [false, false, true],
+                    "in": 0,
+                    "turn_weight": 1.5,
+                    "turn_duration": 0.008,
+                    "mapbox_streets_v8": {"class": "street"},
+                    "is_urban": true,
+                    "admin_index": 0,
+                    "out": 2,
+                    "geometry_index": 10,
+                    "location": [18.461401, -33.959825]
+                  }
+                ],
+                "maneuver": {
+                  "type": "turn",
+                  "instruction": "Turn left onto Rugby Road.",
+                  "modifier": "left",
+                  "bearing_after": 229,
+                  "bearing_before": 282,
+                  "location": [18.461639, -33.959651]
+                },
+                "name": "Rugby Road",
+                "duration": 12.709,
+                "distance": 52.158,
+                "driving_side": "left",
+                "weight": 21.916,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461639, -33.959651],
+                    [18.461401, -33.959825],
+                    [18.461218, -33.959967]
+                  ],
+                  "type": "LineString"
+                }
+              },
+              {
+                "intersections": [
+                  {
+                    "bearings": [47],
+                    "entry": [true],
+                    "in": 0,
+                    "admin_index": 0,
+                    "geometry_index": 11,
+                    "location": [18.461218, -33.959967]
+                  }
+                ],
+                "maneuver": {
+                  "type": "arrive",
+                  "instruction": "Your destination is on the left.",
+                  "modifier": "left",
+                  "bearing_after": 0,
+                  "bearing_before": 227,
+                  "location": [18.461218, -33.959967]
+                },
+                "name": "Rugby Road",
+                "duration": 0,
+                "distance": 0,
+                "driving_side": "left",
+                "weight": 0,
+                "mode": "driving",
+                "geometry": {
+                  "coordinates": [
+                    [18.461218, -33.959967],
+                    [18.461218, -33.959967]
+                  ],
+                  "type": "LineString"
+                }
+              }
+            ],
+            "distance": 101.284,
+            "summary": "Rugby Road"
+          }
+        ],
+        "geometry": {
+          "coordinates": [
+            [18.461007, -33.960026],
+            [18.460999, -33.960022],
+            [18.460985, -33.960012],
+            [18.460961, -33.959979],
+            [18.460978, -33.959913],
+            [18.460999, -33.959856],
+            [18.461165, -33.959517],
+            [18.461264, -33.959289],
+            [18.461408, -33.958948],
+            [18.461489, -33.958717],
+            [18.461646, -33.958179],
+            [18.461732, -33.957849],
+            [18.461739, -33.95782],
+            [18.461745, -33.957795],
+            [18.46182, -33.957459],
+            [18.46187, -33.957122],
+            [18.461916, -33.956711],
+            [18.461942, -33.95632],
+            [18.461947, -33.956173],
+            [18.461948, -33.95609],
+            [18.461948, -33.956068],
+            [18.461947, -33.955986],
+            [18.461944, -33.955796],
+            [18.461947, -33.955623],
+            [18.461952, -33.9556],
+            [18.461963, -33.955577],
+            [18.461981, -33.955562],
+            [18.461981, -33.955562],
+            [18.462033, -33.955542],
+            [18.462112, -33.955517],
+            [18.46214, -33.955508],
+            [18.462248, -33.95548],
+            [18.462295, -33.955545],
+            [18.462341, -33.955587],
+            [18.462388, -33.955615],
+            [18.462414, -33.955625],
+            [18.462461, -33.955633],
+            [18.462504, -33.955635],
+            [18.46255, -33.955633],
+            [18.462583, -33.955627],
+            [18.462667, -33.955654],
+            [18.462707, -33.955678],
+            [18.46274, -33.955705],
+            [18.462775, -33.955731],
+            [18.462775, -33.955731],
+            [18.462769, -33.955748],
+            [18.462736, -33.955816],
+            [18.46265, -33.956047],
+            [18.462634, -33.95611],
+            [18.462621, -33.956185],
+            [18.462607, -33.956329],
+            [18.462577, -33.956735],
+            [18.46251, -33.957313],
+            [18.462402, -33.957864],
+            [18.462378, -33.957985],
+            [18.462252, -33.958463],
+            [18.46212, -33.958883],
+            [18.462017, -33.95916],
+            [18.461926, -33.959409],
+            [18.461903, -33.959505],
+            [18.461896, -33.959534],
+            [18.461892, -33.959571],
+            [18.461893, -33.95966],
+            [18.461895, -33.959718],
+            [18.461837, -33.959694],
+            [18.461792, -33.959678],
+            [18.461738, -33.959666],
+            [18.46169, -33.959658],
+            [18.461639, -33.959651],
+            [18.461401, -33.959825],
+            [18.461218, -33.959967]
+          ],
+          "type": "LineString"
+        }
+      }
+    ],
+    "waypoints": [
+      {"distance": 5.742, "name": "", "location": [18.461007, -33.960026]},
+      {
+        "distance": 4.14,
+        "name": "Residence Road",
+        "location": [18.461981, -33.955562]
+      },
+      {
+        "distance": 4.248,
+        "name": "Madiba Circle",
+        "location": [18.462775, -33.955731]
+      },
+      {"distance": 9.883, "name": "", "location": [18.461903, -33.959505]},
+      {
+        "distance": 5.68,
+        "name": "Rugby Road",
+        "location": [18.461218, -33.959967]
+      }
+    ],
+    "code": "Ok",
+    "uuid": "4LJ0_KdYMWyq34h2Rv_x_cTDfw7nG_k9ZarFvA_HMSLeMR3R1Fj9BQ=="
+  }
