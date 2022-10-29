@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Animate a point along a route</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
+<style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<style>
+    .overlay {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .overlay button {
+        font: 600 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: #3386c0;
+        color: #fff;
+        display: inline-block;
+        margin: 0;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .overlay button:hover {
+        background-color: #4ea0da;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+
+<div id="map"></div>
+<div class="overlay">
+    <button id="replay">Replay</button>
+</div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoieW9jaGkiLCJhIjoiY2tjZThvdWExMDV2dDJxcDgxZzBwbzlxYSJ9.M0yRA6SXDMRgXzXGuYnvsg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [6.161062, 45.36362],
+        zoom: 9
+    });
+
+    var coords = [
+        [6.157903, 45.361839],
+        [6.15835, 45.361932],
+        [6.161408,45.3634445],
+        [6.161558, 45.363508],
+        [6.161307, 45.363462],
+        [6.1610, 45.363570],
+        [6.161057, 45.36362]
+    ];
+
+    var route = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': coords
+                }
+            }
+        ]
+    };
+
+    var marker = new mapboxgl.Marker({
+        color: '#EC0868',
+        className: 'marker'});
+
+    // Calculate the distance in kilometers between route start/end point.
+    var lineDistance = turf.length(route.features[0]);
+
+    var arc = [];
+
+    // Number of steps to use in the arc and animation, more steps means
+    // a smoother arc and animation, but too many steps will result in a
+    // low frame rate
+    var steps = 500;
+
+    // Draw an arc between the `origin` & `destination` of the two points
+    for (var i = 0; i < lineDistance; i += lineDistance / steps) {
+        var segment = turf.along(route.features[0], i);
+        arc.push(segment.geometry.coordinates);
+    }
+
+    // Update the route with calculated arc coordinates
+    route.features[0].geometry.coordinates = arc;
+
+    // Used to increment the value of the point measurement against the route.
+    var counter = 0;
+
+    map.on('load', function () {
+        // Add a source and layer displaying a point which will be animated in a circle.
+        map.addSource('route', {
+            'type': 'geojson',
+            'data': route
+        });
+
+        map.addLayer({
+            'id': 'route',
+            'source': 'route',
+            'type': 'line',
+            'paint': {
+                'line-width': 2,
+                'line-color': '#007cbf'
+            }
+        });
+
+        marker.setLngLat(route.features[0].geometry.coordinates[0]).addTo(map);
+
+        fitMap(map, coords);
+
+        function animate() {
+            // Update point geometry to a new position based on counter denoting
+            // the index to access the arc
+            marker.setLngLat(route.features[0].geometry.coordinates[counter]);
+
+            counter = counter + 1;
+
+            // Request the next frame of animation as long as the end has not been reached
+            if (counter < steps) {
+                requestAnimationFrame(animate);
+            }
+
+        }
+
+        document
+            .getElementById('replay')
+            .addEventListener('click', function () {
+                // Set the coordinates of the original point back to origin
+                marker.setLngLat(route.features[0].geometry.coordinates[0])
+
+                // Reset the counter
+                counter = 0;
+
+                // Restart the animation
+                animate(counter);
+            });
+
+        // Start the animation
+        animate(counter);
+    });
+
+    function fitMap(map, coords) {
+        var bounds = coords.reduce(function (bounds, coord) {
+            return bounds.extend(coord);
+        }, new mapboxgl.LngLatBounds(coords[0], coords[0]));
+        map.fitBounds(bounds, {
+            padding: 30
+        });
+    }
